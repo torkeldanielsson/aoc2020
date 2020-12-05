@@ -1,0 +1,61 @@
+
+    byr (Birth Year) - four digits; at least 1920 and at most 2002.
+    iyr (Issue Year) - four digits; at least 2010 and at most 2020.
+    eyr (Expiration Year) - four digits; at least 2020 and at most 2030.
+    hgt (Height) - a number followed by either cm or in:
+        If cm, the number must be at least 150 and at most 193.
+        If in, the number must be at least 59 and at most 76.
+    hcl (Hair Color) - a # followed by exactly six characters 0-9 or a-f.
+    ecl (Eye Color) - exactly one of: amb blu brn gry grn hzl oth.
+    pid (Passport ID) - a nine-digit number, including leading zeroes.
+    cid (Country ID) - ignored, missing or not.
+
+- valid:
+
+byr:1950 iyr:2015 eyr:2025 hgt:170cm hcl:#000000 ecl:brn pid:012345678
+
+
+- byr
+
+byr:1919 iyr:2015 eyr:2025 hgt:170cm hcl:#000000 ecl:brn pid:012345678
+
+byr:2003 iyr:2015 eyr:2025 hgt:170cm hcl:#000000 ecl:brn pid:012345678
+
+
+- iyr
+
+byr:1950 iyr:2009 eyr:2025 hgt:170cm hcl:#000000 ecl:brn pid:012345678
+
+byr:1950 iyr:2021 eyr:2025 hgt:170cm hcl:#000000 ecl:brn pid:012345678
+
+
+- eyr
+
+byr:1950 iyr:2015 eyr:2019 hgt:170cm hcl:#000000 ecl:brn pid:012345678
+
+byr:1950 iyr:2015 eyr:2031 hgt:170cm hcl:#000000 ecl:brn pid:012345678
+
+
+- hgt
+
+byr:1950 iyr:2015 eyr:2025 hgt:149cm hcl:#000000 ecl:brn pid:012345678
+
+byr:1950 iyr:2015 eyr:2025 hgt:194cm hcl:#000000 ecl:brn pid:012345678
+
+byr:1950 iyr:2015 eyr:2025 hgt:58in hcl:#000000 ecl:brn pid:012345678
+
+byr:1950 iyr:2015 eyr:2025 hgt:77in hcl:#000000 ecl:brn pid:012345678
+
+
+- hcl
+
+byr:1950 iyr:2015 eyr:2025 hgt:170cm hcl:#00000h ecl:brn pid:012345678
+
+byr:1950 iyr:2015 eyr:2025 hgt:170cm hcl:#00000 ecl:brn pid:012345678
+
+byr:1950 iyr:2015 eyr:2025 hgt:170cm hcl:#0000000 ecl:brn pid:012345678
+
+
+- ecl
+
+byr:1950 iyr:2015 eyr:2025 hgt:170cm hcl:#000000 ecl:brnf pid:012345678
