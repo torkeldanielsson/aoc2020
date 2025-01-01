@@ -4,7 +4,7 @@ use std::fs;
 fn main() -> Result<(), Box<dyn Error>> {
     let input = fs::read_to_string("input")?;
 
-    let mut seats = vec![0; 802];
+    let mut seats = vec![0; 891];
 
     for line in input.lines() {
         let chars: Vec<char> = line.chars().collect();
@@ -24,7 +24,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         seats[seat_id as usize] = 1;
     }
 
-    for i in 0..801 {
+    for i in 0..seats.len() {
         if seats[i] == 0 {
             println!("not taken: {}", i);
         }

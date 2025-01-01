@@ -21,8 +21,8 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     // let pub_key_1 = 5764801;
     // let pub_key_2 = 17807724;
-    let pub_key_1 = 1717001;
-    let pub_key_2 = 523731;
+    let pub_key_1 = 12090988;
+    let pub_key_2 = 240583;
 
     let mut ok = 0;
 

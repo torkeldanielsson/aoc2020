@@ -2,7 +2,7 @@ use std::error::Error;
 
 fn main() -> Result<(), Box<dyn Error>> {
     // let mut deck = vec![3, 8, 9, 1, 2, 5, 4, 6, 7];
-    let mut deck = vec![3, 2, 6, 5, 1, 9, 4, 7, 8];
+    let mut deck = vec![2, 1, 9, 3, 4, 7, 8, 6, 5];
 
     for _ in 0..100 {
         println!("{:?}", deck);
